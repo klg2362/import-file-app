@@ -22,13 +22,11 @@ This Laravel console application provides an `import:file` Artisan command that 
 
 ## Usage
 
-``bash
+#### Basic Command
 
 `php artisan import:file {path_to_file} {id}`
 
 ### Example 
-
-``bash
 
 `php artisan import:file storage/app/imports/PAYARC_DDF file_20250702`
 
