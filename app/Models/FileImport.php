@@ -13,8 +13,6 @@ class FileImport extends Model
     protected $fillable = [
         'file_id',
         'file_path',
-        'total_records',
-        'processed_records',
         'started_at',
         'completed_at',
     ];

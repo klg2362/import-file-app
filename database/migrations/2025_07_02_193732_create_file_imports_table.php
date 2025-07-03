@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('file_id')->unique();
             $table->string('file_path');
-            $table->unsignedInteger('total_records')->default(0);
-            $table->unsignedInteger('processed_records')->default(0);
             $table->timestamp('started_at')->nullable();
             $table->timestamp('completed_at')->nullable();
             $table->timestamps();

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('file_import_id')->constrained()->cascadeOnDelete();
             $table->string('record_type', 2);
             $table->unsignedInteger('line_number');
-            $table->json('data');
+            $table->text('data');
             $table->timestamps();
 
             $table->unique(['file_import_id', 'record_type', 'line_number']);
